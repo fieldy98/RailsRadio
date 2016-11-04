@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>File locatoin:</strong>
+  <%= @catalog.file_locatoin %>
+</p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @catalog.artist %>
+</p>
+
+<p>
+  <strong>Album artist:</strong>
+  <%= @catalog.album_artist %>
+</p>
+
+<p>
+  <strong>Album:</strong>
+  <%= @catalog.album %>
+</p>
+
+<p>
+  <strong>Track number:</strong>
+  <%= @catalog.track_number %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @catalog.title %>
+</p>
+
+<p>
+  <strong>Cover:</strong>
+  <%= @catalog.cover %>
+</p>
+
+<%= link_to 'Edit', edit_catalog_path(@catalog) %> |
+<%= link_to 'Back', catalogs_path %>

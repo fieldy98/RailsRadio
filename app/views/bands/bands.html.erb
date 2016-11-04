@@ -1,0 +1,6 @@
+<h2>Music</h2>
+
+<% Dir["D:/dwhite/music/*"].each do |file| %>
+  <%  file.gsub!("/Dwhite/Music", "") %>
+  <li><%= link_to @file, file[/\/.*/] %></li>
+<% end %>

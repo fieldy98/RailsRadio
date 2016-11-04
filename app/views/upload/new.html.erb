@@ -1,0 +1,16 @@
+  <script>soundManager.stopAll();</script>
+<div class="row">
+  <div class="col-xs-6 col-md-4"></div>
+  <div class="col-xs-6 col-md-4">
+  <h1> Upload </h1>
+    <%= form_tag(url: { action: :create }) do %>
+        <%= label_tag :upload, "Scan your song:" %>
+        <%= file_field_tag :upload, class: "btn btn-default btn-file" ,multiple: true %>
+
+        <br />
+        <%= submit_tag "Submit" , class: "btn btn-primary"%>
+
+        <% end %>
+    </div>
+    <div class="col-xs-6 col-md-4"></div>
+</div>

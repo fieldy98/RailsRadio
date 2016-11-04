@@ -1,0 +1,15 @@
+
+  <%Dir.glob('public/covers/*.{jpg}').each do |cover|%>
+    <%cover.gsub(/[^a-z]/i, "")%>
+    <%cover["public/covers/"]= ""%>
+    <%album = cover[0...-4]%>
+    <%if Art.exists?(art: cover)%>
+      <%nil%>
+    <%else%>
+      <%Art.create(album: album,
+                    art: cover)%>
+    <%end%>
+  <%end%>
+  <% Music.update_all(playcount: 0) %>
+  Upload Music
+</a>

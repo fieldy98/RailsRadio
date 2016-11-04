@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist version="0" xmlns="http://xspf.org/ns/0/">
+<trackList>
+<% @mp3s.each do |d| %>
+<track><location><%= d.file_location %></location><creator><%= d.artist %></creator><title><%= d.title %></title></track>
+<% end %>
+</trackList>
+</playlist>

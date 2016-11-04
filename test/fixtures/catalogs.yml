@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  file_locatoin: MyString
+  artist: MyString
+  album_artist: MyString
+  album: MyString
+  track_number: MyString
+  title: MyString
+  cover: 
+
+two:
+  file_locatoin: MyString
+  artist: MyString
+  album_artist: MyString
+  album: MyString
+  track_number: MyString
+  title: MyString
+  cover: 
